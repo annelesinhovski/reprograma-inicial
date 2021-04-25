@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Nos usamos a tag <head> para fazer a importação de arquivos 
+    e declarar tags que queremos que o browser "leia" mas não sejam renderizadas na tela  -->
+
+<head>
+    <meta charset="utf-8">
+    <title>RePrograma PB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+
+
+<!-- Já na tag <body> colocamos tudo o que queremos que seja renderizado na tela  -->
+
+<body>
+
+    <!-- Esse é o cabeçalho (header) principal -->
+    <header>
+        <h1>Reprograma PB</h1>
+        <a href="#">
+            <figure>
+                <!-- Sempre que usar uma tag <img> procure adicionar um atributo alt com a descrição da imagem. Isso é bom para a acessibilidade da sua página -->
+                <img src="/src/imagens/logo-reprograma.jpg" alt="Logo RePrograma" />
+            </figure>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Sobre o RePrograma</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Edições anteriores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Esse é o conteúdo principal da nossa página -->
+    <main>
+
+        <section>
+            <!-- Artigo com informações sobre o programa -->
+            <article>
+                <h2 class="titulo-artigo">O que é o RePrograma?</h2>
+                <p>O ReProgama PB é o estágio em Tecnologia do Paraná Banco exclusivo para mulheres.</p>
+                <h2 class="titulo-artigo">Para quem é feito esse programa?</h2>
+                <p>Procuramos pessoas que se identifiquem com a nossa cultura e se já não estão apaixonadas pelo
+                    sorriso, que estejam dispostas a sonhar esse sonho com a gente.</p>
+            </article>
+
+            <!-- Banner lateral, por isso vamos colocá-lo dentro de uma tag <aside>.
+                O contéudo do elemento aside pode ser aninhado dentro do conteúdo do elemento main -->
+            <aside>
+                <figure>
+                    <img src="src/imagens/banner.jpg" alt="Banner Reprograma com uma mulher sorrindo" />
+                </figure>
+            </aside>
+        </section>
+
+        <section>
+            <h3>Fique por dentro das novidades</h3>
+
+            <!-- Formulário de cadastro -->
+            <form>
+                <fieldset>
+                    <legend>
+                        Cadastre-se para receber informações do RePrograma no seu e-mail e não perder as próximas
+                        edições.
+                    </legend>
+
+                    <!-- A tag <label> serve para colocar um texto junto do campo do form
+                    O for indica sobre qual elemento input é o texto na tela -->
+                    <label for="username">
+                        <span>Nome <abbr title="Obrigatório">*</abbr></span>
+                        <!-- O input coleta a entrada de dado do usuário -->
+                        <input id="username" type="text" name="username">
+                    </label>
+                    <!-- Cada campo fica dentro de uma label -->
+                    <label for="email">
+                        <span>E-mail <abbr title="Obrigatório">*</abbr></span>
+                        <input id="email" type="email" name="email">
+                    </label>
+                    <button type="submit">Fazer meu cadastro</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Este é o rodapé principal -->
+    <footer>
+        <p>© Copyright Paraná Banco 2021</p>
+    </footer>
+
+</body>
+
+</html>
