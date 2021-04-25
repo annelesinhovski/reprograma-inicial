@@ -1,0 +1,23 @@
+header {
+    max-width: 1170px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin: 0 5px;
+}
+
+nav li a {
+    color: var(--purple);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+h2 {
+    font-size: 30px;
+    color: var(--purple);
+}
+
+h3 {
+    font-size: 26px;
+}
+
+section {
+    background: var(--purple);
+}

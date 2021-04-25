@@ -1,0 +1,40 @@
+form {
+    max-width: 430px;
+    display: block;
+    margin: 0 auto;
+    font: 16px Roboto, Arial, Helvetica, sans-serif; 
+}
+
+form legend {
+    text-align: center;
+    color: white;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 20px auto;
+    max-width: 360px;
+    color: white;
+}
+
+form input {
+    display: block;
+    margin: 5px 0;
+    padding: 15px 5%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin: 10px auto;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+    color: white;
+    font: bold 16px Roboto, Arial, Helvetica, sans-serif; 
+}
