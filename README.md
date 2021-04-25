@@ -1,4 +1,4 @@
-# Repositório com estrutura básica para projeto
+# Estrutura básica para projeto front-end
 
 Olá!
 
