@@ -1,0 +1,6 @@
+@import url(/reprograma-inicial/src/css/header.css);
+@import url(/reprograma-inicial/src/css/footer.css);
+
+.container {
+    max-width: 1170px;
+}

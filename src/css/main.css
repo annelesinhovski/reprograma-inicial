@@ -1,12 +1,83 @@
+/* Estilo para títulos */
+h1 {
+    font-size: 44px;
+}
 h2 {
     font-size: 30px;
-    color: var(--purple);
 }
-
 h3 {
     font-size: 26px;
 }
 
-section {
+/* Seção com informações do programa */
+.infos-programa {
+    max-width: 1170px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.infos-programa article {
+    max-width: 470px;
+    padding: 0 50px 0 0;
+}
+
+.infos-programa h1,
+.infos-programa h2 {
+    color: var(--purple);
+    margin: 30px 0;
+}
+
+.infos-programa p {
+    font-size: 24px;
+    max-width: 360px;
+    margin: 20px 0;
+    line-height: 130%;
+}
+
+.infos-programa aside {
+    margin: 50px 0 0;
+}
+
+.infos-programa img {
+    display: block;
+}
+
+/* Seção com formulário de cadastro  */
+.cadastro {
+    padding: 50px 0;
     background: var(--purple);
 }
+
+.cadastro h3 {
+    color: white;
+    text-align: center;
+    margin: 0 20px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
+    .infos-programa {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .infos-programa p {
+        font-size: 14px;
+    }
+
+    .infos-programa img {
+        max-width: 400px;
+        width: 100%;
+    }
+
+ }

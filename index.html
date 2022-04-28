@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html>
-
-<!-- Nos usamos a tag <head> para fazer a importação de arquivos 
-    e declarar tags que queremos que o browser "leia" mas não sejam renderizadas na tela  -->
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RePrograma PB</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/footer.css">
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/page.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/formulario.css">
 </head>
-
-
-
-<!-- Já na tag <body> colocamos tudo o que queremos que seja renderizado na tela  -->
 
 <body>
 
     <!-- Esse é o cabeçalho (header) principal -->
     <header>
-        <h1>Reprograma PB</h1>
         <a href="#">
             <figure>
-                <!-- Sempre que usar uma tag <img> procure adicionar um atributo alt com a descrição da imagem. Isso é bom para a acessibilidade da sua página -->
-                <img src="/src/imagens/logo-reprograma.jpg" alt="Logo RePrograma" />
+                <img src="src/imagens/logo-reprograma.jpg" alt="Logo RePrograma" />
             </figure>
         </a>
 
@@ -39,18 +36,19 @@
     <!-- Esse é o conteúdo principal da nossa página -->
     <main>
 
-        <section>
+        <section class="infos-programa">
             <!-- Artigo com informações sobre o programa -->
             <article>
-                <h2 class="titulo-artigo">O que é o RePrograma?</h2>
+                <h1>O que é o RePrograma?</h1>
                 <p>O ReProgama PB é o estágio em Tecnologia do Paraná Banco exclusivo para mulheres.</p>
-                <h2 class="titulo-artigo">Para quem é feito esse programa?</h2>
+                <h2>Para quem é feito esse programa?</h2>
                 <p>Procuramos pessoas que se identifiquem com a nossa cultura e se já não estão apaixonadas pelo
-                    sorriso, que estejam dispostas a sonhar esse sonho com a gente.</p>
+                    sorriso, que estejam dispostas a sonhar esse sonho com a gente.
+                </p>
             </article>
 
             <!-- Banner lateral, por isso vamos colocá-lo dentro de uma tag <aside>.
-                O contéudo do elemento aside pode ser aninhado dentro do conteúdo do elemento main -->
+         O contéudo do elemento aside pode ser aninhado dentro do conteúdo do elemento main -->
             <aside>
                 <figure>
                     <img src="src/imagens/banner.jpg" alt="Banner Reprograma com uma mulher sorrindo" />
@@ -58,30 +56,29 @@
             </aside>
         </section>
 
-        <section>
+        <section class="cadastro">
             <h3>Fique por dentro das novidades</h3>
 
             <!-- Formulário de cadastro -->
-            <form>
+            <form id="form" onsubmit="ValidateForm(event);">
                 <fieldset>
                     <legend>
-                        Cadastre-se para receber informações do RePrograma no seu e-mail e não perder as próximas
+                        Continue para acessar informações do RePrograma e não perder as próximas
                         edições.
                     </legend>
-
-                    <!-- A tag <label> serve para colocar um texto junto do campo do form
+                     <!-- A tag <label> serve para colocar um texto junto do campo do form
                     O for indica sobre qual elemento input é o texto na tela -->
-                    <label for="username">
-                        <span>Nome <abbr title="Obrigatório">*</abbr></span>
-                        <!-- O input coleta a entrada de dado do usuário -->
-                        <input id="username" type="text" name="username">
-                    </label>
-                    <!-- Cada campo fica dentro de uma label -->
                     <label for="email">
                         <span>E-mail <abbr title="Obrigatório">*</abbr></span>
-                        <input id="email" type="email" name="email">
+                         <!-- O input coleta a entrada de dado do usuário -->
+                        <input type="email" id="email">
                     </label>
-                    <button type="submit">Fazer meu cadastro</button>
+                     <!-- Cada campo fica dentro de uma label -->
+                    <label for="passwd">
+                        <span>Senha <abbr title="Obrigatório">*</abbr></span>
+                        <input type="password" id="passwd">
+                    </label>
+                    <button type="submit">Continuar</button>
                 </fieldset>
             </form>
         </section>
@@ -90,9 +87,10 @@
 
     <!-- Este é o rodapé principal -->
     <footer>
-        <p>© Copyright Paraná Banco 2021</p>
+        <p>© Copyright Paraná Banco 2022</p>
     </footer>
 
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
