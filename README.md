@@ -38,16 +38,16 @@ const users = [
 		email: 'annecl@pbtech.net.br',
 		age: 34
 	},
-    {
-        login: 'willianfl',
-        email: 'willianfl@pbtech.net.br',
-        age: 30
-    },
-    {
-        login: 'lucasplc',
-        email: 'lucasplc@pbtech.net.br',
-        age: 20
-    }
+   	{
+        	login: 'willianfl',
+	        email: 'willianfl@pbtech.net.br',
+        	age: 30
+	},
+    	{
+        	login: 'lucasplc',
+	        email: 'lucasplc@pbtech.net.br',
+        	age: 20
+	}
 ];
 ```
 
