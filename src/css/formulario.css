@@ -1,5 +1,6 @@
+/* Formulário de cadastro  */
 form {
-    max-width: 430px;
+    max-width: 500px;
     display: block;
     margin: 0 auto;
     font: 16px Roboto, Arial, Helvetica, sans-serif; 
@@ -8,6 +9,8 @@ form {
 form legend {
     text-align: center;
     color: white;
+    margin: 0 0 10px;
+    font-size: 18px;
 }
 
 form label {
@@ -18,23 +21,35 @@ form label {
     color: white;
 }
 
+/* Campo de input de texto  */
 form input {
     display: block;
     margin: 5px 0;
-    padding: 15px 5%;
+    padding: 20px 5%;
     border-radius: 5px;
     width: 90%;
+    font-size: 18px;
+    color: var(--purple);
 }
 
+/* Botão de envio do formulario  */
 form button {
     display: block;
     width: 100%;
     max-width: 360px;
     margin: 10px auto;
-    padding: 15px;
+    padding: 18px;
     border: 2px solid white;
     border-radius: 5px;
     background: none;
     color: white;
     font: bold 16px Roboto, Arial, Helvetica, sans-serif; 
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+    background: white;
+    color: var(--purple);
 }

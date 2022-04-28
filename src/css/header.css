@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
 }
 
+/* Lista com menu de navegacao do header  */
 nav {
     margin: 20px 0;
 }
@@ -12,7 +13,6 @@ nav {
 nav li {
     list-style: none;
     display: inline;
-    margin: 0 5px;
 }
 
 nav li a {
@@ -20,4 +20,19 @@ nav li a {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+}
+
+li:nth-child(2) {
+    margin: 0 32px;
+}
+
+@media screen and (max-width: 768px) {
+   header {
+       display: block;
+       padding: 0 20px;
+   }
+   nav li {
+       display: block;
+       width: 100%;
+   }
 }

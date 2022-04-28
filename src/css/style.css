@@ -1,11 +1,3 @@
-/* Você pode importar todos os arquivos CSS em um unico arquivo, 
-mas será que isso é bom para a performance da sua pagina? */
-
-/* @import url(/src/css/header.css);
-@import url(/src/css/main.css);
-@import url(/src/css/formulario.css);
-@import url(/src/css/footer.css); */
-
 /* Este trecho de código reseta o estilo nativo dos navegadores */
 * {
     margin: 0;
@@ -14,11 +6,8 @@ mas será que isso é bom para a performance da sua pagina? */
 }
 
 /* Este trecho define a fonte a ser utilizada na página */
-html {
-    font-family: Roboto, Arial, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    /* Outra forma de escrever este trecho utilizando Propriedades shorthand: */
-    /* font: 18px Roboto, Arial, Arial, Helvetica, sans-serif; */
+html {    
+    font: 18px Roboto, Arial, Arial, Helvetica, sans-serif;
 }
 
 /* Este trecho define as variáveis globais que você pode acessar em outras partes do projeto */
